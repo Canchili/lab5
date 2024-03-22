@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <malloc.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 /*
@@ -13,15 +13,29 @@
 */
 
 
+/*
+int m, n, i;
+int  **pa;
+n=10; m=5;
+
+pa=(int**)malloc(m*sizeof(int*));
+for(i=0;i<m;i++)
+{pa[ i ]= (int*)malloc(n*sizeof(int));}
+ pa[3][8]=5;
+………….
+for(i=0;i<m;i++)
+{free(pa[ i ]);}
+free(pa);
+
+*/
+
 
 int main(int argc, char *argv[]) {
-	char str[1];
-	printf("vvedite znak");
-	fgets(str,sizeof(str), stdin);
-	if (str == "+")
-	{
-		printf("%s\n",str);
-	}
-	
+	int n;
+	printf("vvedite znach n");
+	scanf("%d\n",&n);
+	int **px;
+	px = (int**)malloc(n * sizeof(int));
+	m2 = (double**)malloc(n * sizeof(double));
 	return 0;
 }
