@@ -13,7 +13,7 @@
 */
 
 
-/*
+
 int m, n, i;
 int  **pa;
 n=10; m=5;
@@ -27,7 +27,7 @@ for(i=0;i<m;i++)
 {free(pa[ i ]);}
 free(pa);
 
-*/
+
 
 
 int main(int argc, char *argv[]) {
